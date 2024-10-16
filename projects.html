@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Showcase of my projects and work">
+    <title>My Projects - Kedaar Rentachintala</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <!-- Update Google Fonts link to include Söhne -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="nav-left">
+                    <a href="index.html" class="logo">Kedaar Rentachintala</a>
+                </div>
+                <div class="nav-right">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="index.html#contact" class="cta-button">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>My Projects</h1>
+            <p class="subtitle">A showcase of my work and contributions</p>
+        </section>
+
+        <section id="project-list">
+            <div class="card project">
+                <img src="https://picsum.photos/seed/project1/400/400" alt="Project 1 image" class="project-image">
+                <h2>Project 1</h2>
+                <p>Description of Project 1. This is where you can provide details about the project, its goals, and your role in it.</p>
+                <a href="#" class="cta-button">View Project</a>
+            </div>
+
+            <div class="card project">
+                <img src="https://picsum.photos/seed/project2/400/400" alt="Project 2 image" class="project-image">
+                <h2>Project 2</h2>
+                <p>Description of Project 2. Highlight the technologies used, challenges overcome, and the impact of the project.</p>
+                <a href="#" class="cta-button">View Project</a>
+            </div>
+
+            <div class="card project">
+                <img src="https://picsum.photos/seed/project3/400/400" alt="Project 3 image" class="project-image">
+                <h2>Project 3</h2>
+                <p>Description of Project 3. Discuss the problem it solves, your approach, and any notable features or achievements.</p>
+                <a href="#" class="cta-button">View Project</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kedaar Rentachintala. All rights reserved.</p>
+    </footer>
+    <div id="chatbot-container" class="chatbot-closed">
+        <div id="chatbot-header">
+            <h3>AI Guide</h3>
+            <button id="chatbot-toggle">Open</button>
+        </div>
+        <div id="chatbot-messages"></div>
+        <div id="chatbot-input">
+            <input type="text" id="user-input" placeholder="Ask about Kedaar...">
+            <button id="send-message">Send</button>
+        </div>
+    </div>
+    <script src="chatbot.js"></script>
+</body>
+</html>

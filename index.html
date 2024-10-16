@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website showcasing my introduction, hobbies, and projects">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <!-- Update Google Fonts link to include Söhne -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="nav-left">
+                    <a href="index.html" class="logo">Kedaar Rentachintala</a>
+                </div>
+                <div class="nav-right">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="#contact" class="cta-button">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introduction" class="hero">
+            <h1>Welcome to My Personal Website</h1>
+            <p class="subtitle">Exploring ideas, creating solutions, and sharing knowledge.</p>
+            <img src="https://picsum.photos/200" alt="My profile picture" class="profile-picture">
+            <p>Hello! I'm Kedaar Rentachintala. This is a brief introduction about me.</p>
+        </section>
+
+        <section id="hobbies">
+            <h2>My Hobbies</h2>
+            <ul class="hobby-list">
+                <li>
+                    <i class="fas fa-book"></i>
+                    <h3>Reading</h3>
+                    <p>I love exploring new worlds and ideas through books. It's a great way to relax and learn simultaneously.</p>
+                    <img src="https://picsum.photos/seed/reading/200/200" alt="Reading books" class="hobby-image">
+                </li>
+                <li>
+                    <i class="fas fa-hiking"></i>
+                    <h3>Hiking</h3>
+                    <p>Being in nature rejuvenates me. I enjoy the physical challenge and the beautiful scenery hiking provides.</p>
+                    <img src="https://picsum.photos/seed/hiking/200/200" alt="Hiking in nature" class="hobby-image">
+                </li>
+                <li>
+                    <i class="fas fa-camera"></i>
+                    <h3>Photography</h3>
+                    <p>Capturing moments and perspectives allows me to see the world in new ways and share my experiences with others.</p>
+                    <img src="https://picsum.photos/seed/photography/200/200" alt="Taking photos" class="hobby-image">
+                </li>
+                <li>
+                    <i class="fas fa-utensils"></i>
+                    <h3>Cooking</h3>
+                    <p>I find cooking to be a creative outlet. It's satisfying to experiment with flavors and share meals with friends and family.</p>
+                    <img src="https://picsum.photos/seed/cooking/200/200" alt="Cooking food" class="hobby-image">
+                </li>
+                <li>
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>Lifting</h3>
+                    <p>Weightlifting helps me stay fit and strong. I enjoy the discipline it requires and the sense of accomplishment after each workout.</p>
+                    <img src="https://picsum.photos/seed/lifting/200/200" alt="Lifting weights" class="hobby-image">
+                </li>
+            </ul>
+        </section>
+
+        <section id="contact" class="card">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kedaar Rentachintala. All rights reserved.</p>
+    </footer>
+
+    <div id="chatbot-container" class="chatbot-closed">
+        <div id="chatbot-header">
+            <h3>AI Guide</h3>
+            <button id="chatbot-toggle">Open</button>
+        </div>
+        <div id="chatbot-messages"></div>
+        <div id="chatbot-input">
+            <input type="text" id="user-input" placeholder="Ask about Kedaar...">
+            <button id="send-message">Send</button>
+        </div>
+    </div>
+    <script src="chatbot.js"></script>
+</body>
+</html>
